@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'><link rel="stylesheet" href="./style.css">
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  place-items: center;
+  min-height: 100vh;
+  padding: 0 100px;
+}
+
+/* SWIPER */
+
+.swiper {
+  max-width: 750px;
+  aspect-ratio: 5/3;
+  z-index: 10;
+}
+
+.swiper-pagination {
+  transform: translateY(-10px);
+  z-index: 10;
+  --swiper-pagination-color: #7edd90;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 5px;
+}
+
+.swiper-slide {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  place-items: center;
+  gap: 15px;
+  padding: 20px 40px 20px 20px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: #23232a;
+  box-shadow: inset 18px 18px 8px rgba(0, 0, 0, 0.2),
+    inset -10px -18px 8px rgba(255, 255, 255, 0.1);
+}
+
+.swiper-slide > img {
+  width: 80%;
+  height: 80%;
+  border-radius: 30px;
+  border: 2px solid #fff;
+  filter: grayscale(40%);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  color: #fff;
+}
+
+.title > h1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.4;
+  letter-spacing: 0.2rem;
+  font-size: 1.3rem;
+}
+
+.title > h3 {
+  line-height: 1.5;
+  letter-spacing: 0.05rem;
+  color: #6b7280;
+  font-size: 0.7rem;
+}
+
+.content > p {
+  line-height: 1.5;
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.white-point {
+  display: inline-flex;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+
+@media (max-width: 800px) {
+   main {
+    padding: 0 0;
+  }
+  
+  .swiper {
+    max-width: 650px;
+  }
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <main>
+      <!-- Swiper -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0783/6280/4560/collections/IMG_2208.png?v=1699921575"
+              alt="" />
+            <div class="content">
+              <div class="title">
+                <h1>
+                  <span class="white-point"></span> Increased Visibility
+                  <span class="white-point"></span>
+                </h1>
+                <h3>STRICTLY4RESALE</h3>
+              </div>
+              <p>
+                It was created in 1889 when Van Gogh was staying at a mental
+                hospital in France. He painted it from memory, which means he
+                painted what he felt. In "Starry Night," you can see a dark blue
+                night sky filled with swirling stars. Below, there's a small
+                village with tall cypress trees. The stars in the painting are
+                extra bright and seem to move around. It's exhibited at Museum
+                of Modern Art (MoMA) in New York City, the USA.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0783/6280/4560/collections/IMG_2196.png?v=1699921429"
+              alt="" />
+            <div class="content">
+              <div class="title">
+                <h1>
+                  <span class="white-point"></span> Wide Accessibility
+                  <span class="white-point"></span>
+                </h1>
+                <h3>STRICTLY4RESALE</h3>
+              </div>
+              <p>
+                It was created between 1907 and 1908. In the painting, you can
+                see a couple locked in an intimate and passionate embrace. They
+                are covered in a pattern of shimmering gold and surrounded by
+                intricate geometric shapes and symbols. Today, "The Kiss" is
+                considered one of the most iconic and valuable artworks in the
+                world. It's exhibited at the Belvedere Museum in Vienna,
+                Austria.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0783/6280/4560/collections/IMG_2208.png?v=1699921502"
+              alt="" />
+            <div class="content">
+              <div class="title">
+                <h1>
+                  <span class="white-point"></span> Next Day Delivery
+                  <span class="white-point"></span>
+                </h1>
+                <h3>STRICTLY4RESALE</h3>
+              </div>
+              <p>
+                It was created around the years 1484-1486. In the painting, you
+                can see a beautiful woman standing on a seashell in the middle
+                of the sea. This woman is Venus, the goddess of love and beauty
+                in ancient mythology. She is born from the sea foam, and the
+                wind gods are gently blowing her to the shore. It's exhibited in
+                the Uffizi Gallery in Florence, Italy.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/4a5aedde-34ce-484a-8499-a09394fed77e"
+              alt="" />
+            <div class="content">
+              <div class="title">
+                <h1>
+                  <span class="white-point"></span> Dropshipping
+                  <span class="white-point"></span>
+                </h1>
+                <h3>STRICTLY4RESALE</h3>
+              </div>
+              <p>
+                It was created around 1665. The painting shows a young woman
+                with a beautiful pearl earring in her ear. She has a simple,
+                elegant outfit, and she looks over her shoulder with a
+                mysterious expression. Today, it is exhibited in the Rijksmuseum
+                Amsterdam, The Netherlands, where people from all over the world
+                come to see its beauty.
+              </p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/d0beb676-ca36-4a8c-a9f2-bdce2855fa33"
+              alt="" />
+            <div class="content">
+              <div class="title">
+                <h1>
+                  <span class="white-point"></span> Scale Business
+                  <span class="white-point"></span>
+                </h1>
+                <h3>STRICTLY4RESALE</h3>
+              </div>
+              <p>
+                He painted it between 1503 and 1506 during the Renaissance
+                period. The painting shows a woman with a mysterious smile and
+                long, dark hair. She's wearing a simple dress and sits against a
+                distant landscape with a winding river and a bridge. Her smile
+                seems to change as you look at it from different angles. It's
+                now exhibited in the Louvre Museum in Paris, France.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </main>
+
+    <ul class="particles">
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 20"></span>
+      <span style="--i: 21"></span>
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 20"></span>
+      <span style="--i: 21"></span>
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 20"></span>
+      <span style="--i: 21"></span>
+    </ul>
+  </body>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js'></script><script  src="./script.js"></script>
+<script>
+  var swiper = new Swiper(".swiper", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+</script>
+</body>
+</html>
